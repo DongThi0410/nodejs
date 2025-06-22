@@ -1,9 +1,10 @@
 {
   "name": "blog",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon src/index.js",
+    "watch":"sass -w src/resources/scss/:src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,9 +23,12 @@
   "homepage": "https://github.com/DongThi0410/nodejs#readme",
   "description": "",
   "devDependencies": {
+    "morgan": "^1.10.0",
     "nodemon": "^3.1.10"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.3",
+    "sass": "^1.89.2"
   }
 }
